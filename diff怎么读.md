@@ -19,7 +19,7 @@ which handles multiple parent commits specially.
 The index header shows abbreviated SHA1 IDs for the two parents (on
 the left-hand side of the ..), and the merge commit (on the right-hand
 side.
-
+d 
 
  > --- a/doc/emacs/ChangeLog
  > +++ b/doc/emacs/ChangeLog
