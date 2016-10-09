@@ -3,6 +3,11 @@ title: 部署Jupyter/IPython Notebook Memo
 date: 2016-09-24 20:55:44
 tags:
 ---
+
+[toc]
+
+---
+
 # 需求：
 1. 基于 web 的 itervactive debug
 2. 公网访问的 Web Python解析脚本
@@ -59,7 +64,7 @@ IPython 运行结果可以单独保存，格式为 .ipynb 。`nbviewer`是 Jupyt
 
 ## 安装Notebook
 本文通过安装Canopy的发行版本实现Jupyter / IPython安装。
-Canopy是一个科学计算的python发行版本。包括了需要的依赖package，包括IPython、Jupyter、Tornado（web服务器）以及其他科学计算库，例如Numpy、Scipy、Matplotlib等。
+Canopy是一个科学计算的python发行版本。包括了需要的依赖package，包括IPython、Jupiter、[Tornado](http://www.tornadoweb.org/en/stable/)（web服务器）以及其他科学计算库，例如Numpy、Scipy、Matplotlib等。
 
 因为在服务器端，这里有两种方案可用于下载并安装Canopy。
 
@@ -121,7 +126,7 @@ Canopy下载[地址](https://store.enthought.com/downloads/#default)，选择合
 
 #### 防火墙转发
 由于Ubuntu默认未启动防火墙，需要的可以看一下这里：
->To function correctly, the firewall on the computer running the ipython server must be configured to allow connections from client machines on the `c.NotebookApp.port` port to allow connections to the web interface. The firewall must also allow connections from 127.0.0.1 (localhost) on ports from 49152 to 65535. These ports are used by the server to communicate with the notebook kernels. The kernel communication ports are chosen randomly by ZeroMQ, and may require multiple connections per kernel, so a large range of ports must be accessible.
+>To function correctly, the firewall on the computer running the ipython server must be configured to allow connections from client machines on the `c.NotebookApp.port` port to allow connections to the web interface. The firewall must also allow connections from 127.0.0.1 (localhost) on ports from 49152 to 65535. These ports are used by the server to communicate with the notebook kernels. The kernel communication ports are chosen randomly by ZeroMQ, and may require multiple connections per kernel, so a large range of ports must be accessible.
 
 [#reference-Firewall Setup](http://ipython.org/ipython-doc/stable/notebook/public_server.html#firewall-setup)
 
@@ -134,13 +139,14 @@ Canopy下载[地址](https://store.enthought.com/downloads/#default)，选择合
 
 原程序的的标准输出被自动改向到当前目录下的nohup.out文件，起到了log的作用。
 [#reference-linux的nohup命令的用法](http://www.cnblogs.com/allenblogs/archive/2011/05/19/2051136.html)
+[#reference-Linux 技巧：让进程在后台可靠运行的几种方法](https://www.ibm.com/developerworks/cn/linux/l-cn-nohup/)
 
 
 #### Bookstore
->By default, the notebook server stores the notebook documents that it saves as files in the working directory of the notebook server, also known as the `notebook_dir`. This logic is implemented in the FileNotebookManager
- class. However, the server can be configured to use a different notebook manager class, which can store the notebooks in a different format.
-The [bookstore](https://github.com/rgbkrk/bookstore) package currently allows users to store notebooks on Rackspace CloudFiles or OpenStack Swift based object stores.
-Writing a notebook manager is as simple as extending the base class NotebookManager.The [simple_notebook_manager](https://github.com/khinsen/simple_notebook_manager) provides a great example of an in memory notebook manager, created solely for the purpose of illustrating the notebook manager API.
+>By default, the notebook server stores the notebook documents that it saves as files in the working directory of the notebook server, also known as the `notebook_dir`. This logic is implemented in the FileNotebookManager
+ class. However, the server can be configured to use a different notebook manager class, which can store the notebooks in a different format.
+The [bookstore](https://github.com/rgbkrk/bookstore) package currently allows users to store notebooks on Rackspace CloudFiles or OpenStack Swift based object stores.
+Writing a notebook manager is as simple as extending the base class NotebookManager.The [simple_notebook_manager](https://github.com/khinsen/simple_notebook_manager) provides a great example of an in memory notebook manager, created solely for the purpose of illustrating the notebook manager API.
 
 [#reference-Using a different notebook store](http://ipython.org/ipython-doc/stable/notebook/public_server.html#using-a-different-notebook-store)
 
@@ -177,7 +183,8 @@ Jupyter 没有 profile 概念了，只有默认配置，在`~/.jupyter/jupyter_n
 [#reference-IPython - ipython_notebook_config.py missing](http://stackoverflow.com/questions/31962862/ipython-ipython-notebook-config-py-missing)
 [#reference-Where should I place my settings and profiles for use with IPython/Jupyter 4.0?](http://stackoverflow.com/questions/32071672/where-should-i-place-my-settings-and-profiles-for-use-with-ipython-jupyter-4-0)
 [#reference-How do I get IPython profile behavior from Jupyter 4.x?](http://stackoverflow.com/questions/32320836/how-do-i-get-ipython-profile-behavior-from-jupyter-4-x)
-[#reference-jupyter配置ipython notebook not creating/ignoring settings in 'ipython_notebook_config.py' #8818](https://github.com/ipython/ipython/issues/8818)
+[#reference-jupyter配置ipython notebook not creating/ignoring settings in 'ipython_notebook_config.py' #8818](https://github.com/ipython/ipython/issues/8818)
+[#reference-how to set up a jupyter notebook to run python on ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-jupyter-notebook-to-run-ipython-on-ubuntu-16-04)
 
 ## Option
 ### 设置登录密码
