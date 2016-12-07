@@ -2,7 +2,12 @@
 title: 购买域名+服务器+部署服务器+实现ssl协议
 date: 
 tags:
+layout: draft
 ---
+
+纪录部署busihacker.com的一些问题
+<!-- more -->
+
 [两条a记录主要是为了负载均衡吧？](https://www.google.com.hk/search?ie=utf-8&oe=UTF-8&hl=zh-CN&q=%E4%B8%A4%E6%9D%A1+a%E8%AE%B0%E5%BD%95&gws_rd=ssl)
 [常用域名记录解释：A记录、MX记录、CNAME记录、TXT记录、AAAA记录、NS记录](https://www.ezloo.com/2011/04/a_mx_cname_txt_aaaa_ns.html)
 [如何建立个人网站？](https://www.zhihu.com/question/19774219)

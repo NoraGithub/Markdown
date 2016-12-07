@@ -18,6 +18,8 @@ tags:
 2. 购买域名并绑定到服务器
 3. 和Markdown/Rmarkdown结合（未完成）
 
+<!-- more -->
+
 ---
 
 # IPython 和 Jupyter

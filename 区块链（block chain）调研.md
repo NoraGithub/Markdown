@@ -1,3 +1,13 @@
+---
+title: 区块链（block chain）调研
+date: 
+tags: 
+layout: draft
+---
+
+区块链和大数据结合貌似可以有作为，开个头。
+<!-- more -->
+
 [Web2Web Bootstrap](https://elendirx.github.io/web2web/)
 >笑来兄在微信公号发布的，torren不依附于任何服务器，很难将其关闭，或许这就是未来信息存储和传播的主要方式，永久保存不消失，创造永恒的信息世界
 

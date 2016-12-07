@@ -6,9 +6,12 @@ tags:
  - StackEdit
  - Hexo
  - 同步
+layout: draft
 ---
 
 最近迷上了Markdown，希望积累些文字。同时，Sublime的Markdown插件已经能满足我对写作体验的追求，作为一个WebApp的狂热爱好者，决定使用StackEdit作为我的Markdown终端。另外，因为已经利用GitHub Page和Hexo建了一个Blog，必须兼容历史数据的同时具备一定的健壮性，起码，单独使用Hexo和StackEdit时，都要符合产品的使用预期。
+
+<!-- more -->
 
 [#为什么使用StackEdit作为我的Markdown终端？-Markdown Web  编辑器产品调研](MarkdownWeb编辑器产品调研)
 

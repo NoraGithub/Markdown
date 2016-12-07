@@ -1,5 +1,14 @@
+---
+title: git的一些坑
+date: 
+tags: 
+layout: draft
+---
+
 
 weibo的git使用笔记。
+<!-- more -->
+
 [Git远程操作详解](http://www.ruanyifeng.com/blog/2014/06/git_remote.html?bsh_bid=1314465090)
 [Git 使用规范流程](http://www.ruanyifeng.com/blog/2015/08/git-use-process.html)
 [git rebase 阮一峰 谷歌搜索](https://www.google.com.hk/search?q=git+rebase++%E9%98%AE%E4%B8%80%E5%B3%B0&ie=utf-8&oe=utf-8&gws_rd=cr,ssl)
