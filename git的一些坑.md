@@ -1,6 +1,6 @@
 ---
 title: git的一些坑
-date: 
+date: 2016-10-09 14:09:00
 tags: 
 layout: draft
 ---

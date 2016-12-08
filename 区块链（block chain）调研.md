@@ -1,6 +1,6 @@
 ---
 title: 区块链（block chain）调研
-date: 
+date: 2016-10-09 14:11:00
 tags: 
 layout: draft
 ---

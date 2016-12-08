@@ -1,6 +1,6 @@
 ---
 title: 【译】快速开始Jupyter Notebook
-date: 
+date: 2016-10-12 11:08:00
 tags: 
 layout: draft
 ---
