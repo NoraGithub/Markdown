@@ -1,12 +1,12 @@
 ---
-title: Markdown Web  编辑器产品调研
-date: 
+title: Markdown Web 编辑器产品调研
+date: 2016-09-29 15:34:00
 tags: 
 layout: draft
 ---
 
 <!-- more -->
-# Markdown Web  编辑器产品调研
+# Markdown Web 编辑器产品调研
 
 
 
