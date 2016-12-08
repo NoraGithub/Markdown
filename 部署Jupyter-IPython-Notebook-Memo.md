@@ -4,10 +4,6 @@ date: 2016-09-24 20:55:44
 tags:
 ---
 
-[toc]
-
----
-
 # 需求：
 1. 基于 web 的 itervactive debug
 2. 公网访问的 Web Python解析脚本
