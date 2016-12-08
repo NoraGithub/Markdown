@@ -53,7 +53,7 @@ layout（布局）概念类似一种页面类型，（默认情况下，但是�
 
 1. 不同layout的唯一区别是保存到不同的路径（to some extent）
 2. layout支持自定义，存放目录和post一样，当scaffold无自定义类型时，调用默认layout
-3. hexo publish 可用于发表草稿（draft-->post，参考1）
+3. hexo publish 可用于发表草稿（draft-->post，参考1）（仅用于发表草稿，不代表支持转移目录）
 4. hexo new page
 
 
@@ -102,6 +102,11 @@ template上述内容的展现方式
 
 新建博客利用`hexo new %postname`创建后有%blogname.md为名的post文件，存放于source/_post
 
+
+
+/2016/12/06/photoe-test/%2F2016%2F11%2F24%2FHexo-Blog-Setup%E4%BB%A5%E5%8F%8A%E5%B8%B8%E8%A7%81%E9%85%8D%E7%BD%AE%2F 404
+
+这种页面的404还是显示不正常
 ## 设置about
 同理
 # 设置rss
@@ -117,6 +122,19 @@ template上述内容的展现方式
 `yoursite.com`
 `http://yoursite.com/`
 其中最后的斜杠`/`不能遗漏，会导致转义出现问题
+
+
+新问题：
+修改generator-search-db
+search.ejs
+
+      <!--modified by Nora
+       <url><%- encodeURIComponent(config.root + post.path) %></url>
+       -->
+       <url><%- config.url + config.root + encodeURIComponent( post.path) %></url>
+
+增加绝对路径
+
 ## encode& decode
 根据http协议，URL中的部分字符会进行转义（encode），例如中文字符，会遇见的一个问题是把`/`转为`%2F`进行页面访问。
 检查yoursite.com/search.xml可以发现`npm install hexo-generator-searchdb --save`会根据文章简历索引，并编码后访问
