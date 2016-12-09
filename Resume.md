@@ -41,15 +41,15 @@ Python & R 实现商业分析
 + 渠道资源分析&数据探索
 + “计划”一期设计&测试
 + 广点通DMP服务对接
-+ [BES AMS服务对接](http://noragithub.github.io/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#BES_AMS服务对接)&emsp;&emsp;<font size=1><a href="http://noragithub.github.io/2016/11/15/STAR-of-Projects/#BES_AMS服务对接">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2016.08-2016.10</font>
-+ [The Media Trust对接](http://noragithub.github.io/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#The_Media_Trust对接)&emsp;&emsp;<font size=1><a href="http://noragithub.github.io/2016/11/15/STAR-of-Projects/#The_Media_Trust对接">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2016.08-2016.10</font>
-+ [Peer 39/ADbug brandsafety（品牌安全）对接](http://noragithub.github.io/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#Peer_39/ADbug_brandsafety（品牌安全）对接)&emsp;&emsp;<font size=1><a href="http://noragithub.github.io/2016/11/15/STAR-of-Projects/#Peer_39/ADbug_brandsafety（品牌安全）对接">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2016.04-2016.06</font>
-+ [Sizmek ad serving对接](http://noragithub.github.io/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#Sizmek_ad_serving对接)&emsp;&emsp;<font size=1><a href="http://noragithub.github.io/2016/11/15/STAR-of-Projects/#Sizmek_ad_serving对接">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2015.12-2016.06</font>
-+ [高通DSP投放](http://noragithub.github.io/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#高通DSP投放)&emsp;&emsp;<font size=1><a href="http://noragithub.github.io/2016/11/15/STAR-of-Projects/#高通DSP投放">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2016.02-2016.04</font>
-+ [移动RTB/全渠道PMP/PDB市场对接](http://noragithub.github.io/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#移动RTB/全渠道PMP/PDB市场对接)&emsp;&emsp;<font size=1><a href="http://noragithub.github.io/2016/11/15/STAR-of-Projects/#移动RTB/全渠道PMP/PDB市场对接">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2015.03-2016.11</font>
-+ [SEM品牌推广](http://noragithub.github.io/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#SEM品牌推广)&emsp;&emsp;<font size=1><a href="http://noragithub.github.io/2016/11/15/STAR-of-Projects/#SEM品牌推广">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2015.05-2015.06</font>
-+ [有赞商城DSP推广](http://noragithub.github.io/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#有赞商城DSP推广)&emsp;&emsp;<font size=1><a href="http://noragithub.github.io/2016/11/15/STAR-of-Projects/#有赞商城DSP推广">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2015.05-2015.08</font>
-+ [移动SSP iOS SDK第一版](http://noragithub.github.io/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#移动SSP_iOS_SDK第一版)&emsp;&emsp;<font size=1><a href="http://noragithub.github.io/2016/11/15/STAR-of-Projects/#移动SSP_iOS_SDK第一版">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2015.04-2015.04</font>
++ [BES AMS服务对接](/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#BES_AMS服务对接)&emsp;&emsp;<font size=1><a href="/2016/11/15/STAR-of-Projects/#BES_AMS服务对接">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2016.08-2016.10</font>
++ [The Media Trust对接](/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#The_Media_Trust对接)&emsp;&emsp;<font size=1><a href="/2016/11/15/STAR-of-Projects/#The_Media_Trust对接">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2016.08-2016.10</font>
++ [Peer 39/ADbug brandsafety（品牌安全）对接](/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#Peer_39/ADbug_brandsafety（品牌安全）对接)&emsp;&emsp;<font size=1><a href="/2016/11/15/STAR-of-Projects/#Peer_39/ADbug_brandsafety（品牌安全）对接">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2016.04-2016.06</font>
++ [Sizmek ad serving对接](/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#Sizmek_ad_serving对接)&emsp;&emsp;<font size=1><a href="/2016/11/15/STAR-of-Projects/#Sizmek_ad_serving对接">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2015.12-2016.06</font>
++ [高通DSP投放](/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#高通DSP投放)&emsp;&emsp;<font size=1><a href="/2016/11/15/STAR-of-Projects/#高通DSP投放">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2016.02-2016.04</font>
++ [移动RTB/全渠道PMP/PDB市场对接](/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#移动RTB/全渠道PMP/PDB市场对接)&emsp;&emsp;<font size=1><a href="/2016/11/15/STAR-of-Projects/#移动RTB/全渠道PMP/PDB市场对接">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2015.03-2016.11</font>
++ [SEM品牌推广](/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#SEM品牌推广)&emsp;&emsp;<font size=1><a href="/2016/11/15/STAR-of-Projects/#SEM品牌推广">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2015.05-2015.06</font>
++ [有赞商城DSP推广](/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#有赞商城DSP推广)&emsp;&emsp;<font size=1><a href="/2016/11/15/STAR-of-Projects/#有赞商城DSP推广">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2015.05-2015.08</font>
++ [移动SSP iOS SDK第一版](/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#移动SSP_iOS_SDK第一版)&emsp;&emsp;<font size=1><a href="/2016/11/15/STAR-of-Projects/#移动SSP_iOS_SDK第一版">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2015.04-2015.04</font>
 
 
 ---
@@ -61,11 +61,11 @@ Python & R 实现商业分析
 2. 接手旧产品，并根据管理层反馈做快速迭代；
 3. 参与创新APP项目，如， 我是妈咪 （ 母婴闪购电商）和 hey!购物 （基于库存的个性化推荐APP）;
 
-+ [总裁看板](http://noragithub.github.io/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#总裁看板)&emsp;&emsp;<font size=1><a href="http://noragithub.github.io/2016/11/15/STAR-of-Projects/#总裁看板">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2014.07-2015.01</font>
-+ [创新APP项目](http://noragithub.github.io/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#创新APP项目)&emsp;&emsp;<font size=1><a href="http://noragithub.github.io/2016/11/15/STAR-of-Projects/#创新APP项目">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2014.10-2015.01</font>
-+ [移动司南](http://noragithub.github.io/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#移动司南)&emsp;&emsp;<font size=1><a href="http://noragithub.github.io/2016/11/15/STAR-of-Projects/#移动司南">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2014.10-2014.11</font>
-+ [唯品司南](http://noragithub.github.io/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#唯品司南)&emsp;&emsp;<font size=1><a href="http://noragithub.github.io/2016/11/15/STAR-of-Projects/#唯品司南">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2014.07-2014.07</font>
-+ [唯品经纬](http://noragithub.github.io/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#唯品经纬)&emsp;&emsp;<font size=1><a href="http://noragithub.github.io/2016/11/15/STAR-of-Projects/#唯品经纬">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2014.07-2014.07</font>
++ [总裁看板](/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#总裁看板)&emsp;&emsp;<font size=1><a href="/2016/11/15/STAR-of-Projects/#总裁看板">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2014.07-2015.01</font>
++ [创新APP项目](/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#创新APP项目)&emsp;&emsp;<font size=1><a href="/2016/11/15/STAR-of-Projects/#创新APP项目">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2014.10-2015.01</font>
++ [移动司南](/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#移动司南)&emsp;&emsp;<font size=1><a href="/2016/11/15/STAR-of-Projects/#移动司南">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2014.10-2014.11</font>
++ [唯品司南](/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#唯品司南)&emsp;&emsp;<font size=1><a href="/2016/11/15/STAR-of-Projects/#唯品司南">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2014.07-2014.07</font>
++ [唯品经纬](/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#唯品经纬)&emsp;&emsp;<font size=1><a href="/2016/11/15/STAR-of-Projects/#唯品经纬">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2014.07-2014.07</font>
 
 ---
 ## 数据分析师
@@ -77,17 +77,17 @@ Python & R 实现商业分析
 2. 促销组合：不同促销形式的效果&组合分析，并形成报表系统；
 3. 财务：市场费用的构成分析；
 
-+ [微信特卖](http://noragithub.github.io/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#微信特卖)&emsp;&emsp;<font size=1><a href="http://noragithub.github.io/2016/11/15/STAR-of-Projects/#微信特卖">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2014.06-2014.09</font>
-+ [归因模型](http://noragithub.github.io/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#归因模型)&emsp;&emsp;<font size=1><a href="http://noragithub.github.io/2016/11/15/STAR-of-Projects/#归因模型">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2013.11-2014.04</font>
-+ [管理培训生](http://noragithub.github.io/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#管理培训生)-<font color=#FF4500 size=1>2013.07-2014.02</font>
++ [微信特卖](/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#微信特卖)&emsp;&emsp;<font size=1><a href="/2016/11/15/STAR-of-Projects/#微信特卖">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2014.06-2014.09</font>
++ [归因模型](/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#归因模型)&emsp;&emsp;<font size=1><a href="/2016/11/15/STAR-of-Projects/#归因模型">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2013.11-2014.04</font>
++ [管理培训生](/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#管理培训生)-<font color=#FF4500 size=1>2013.07-2014.02</font>
 
 ---
 # 教育背景
 
 华南理工大学 软件工程 2009-2013
 
-+ [电子商务代运营](http://noragithub.github.io/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#电子商务代运营)&emsp;&emsp;<font size=1><a href="http://noragithub.github.io/2016/11/15/STAR-of-Projects/#电子商务代运营">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2011.09-2012.06</font>
-+ [个性化推荐系统](http://noragithub.github.io/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#个性化推荐系统)-<font color=#FF4500 size=1>2012.09-2013.06</font>
++ [电子商务代运营](/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#电子商务代运营)&emsp;&emsp;<font size=1><a href="/2016/11/15/STAR-of-Projects/#电子商务代运营">[STAR介绍]</a></font>-<font color=#FF4500 size=1>2011.09-2012.06</font>
++ [个性化推荐系统](/2016/07/30/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/#个性化推荐系统)-<font color=#FF4500 size=1>2012.09-2013.06</font>
 
 ---
 # 其它

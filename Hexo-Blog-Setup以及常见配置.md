@@ -134,6 +134,23 @@ search.ejs
        <url><%- config.url + config.root + encodeURIComponent( post.path) %></url>
 
 增加绝对路径
+生成search.xml
+
+再更新：
+确认了html 属性href作相对引用的逻辑后，修改为：
+因为href='/path'
+会直接访问当前主域名＋path
+
+    <url><%-  config.root + encodeURIComponent( post.path) %></url>
+
+
+其它md的相对路径也按照该逻辑处理。减少绝对路径使用，因为有多个发布地点。
+
+
+
+## github的包含关系。
+例如_post已经在一个仓库了，希望建一个新的仓库包涵旧仓库
+
 
 ## encode& decode
 根据http协议，URL中的部分字符会进行转义（encode），例如中文字符，会遇见的一个问题是把`/`转为`%2F`进行页面访问。
@@ -155,6 +172,13 @@ http://ww2.sinaimg.cn/mw690/6fa34428jw8e6sgfwn3suj20c80afmxk.jpg
  Github 访问速度太慢，有没有通过反向代理或者CDN加速的方式提高访问速度？特别是如果更新DNS的情况下
 
 经过调研，最简单快速的方法是利用coding.net（墙内版Github）的pages服务设置hook自动更新 
+
+//godaddy
+设置www别名到pages.coding.me
+绑定coding pages到www.busihacker.com
+
+#### 定期更新问题&hook问题&父子域名、（发布到coding.me／noragithub.io）
+
 # 可能有的问题
 https协议的支持
 seo支持
