@@ -139,7 +139,7 @@ search.ejs
 再更新：
 确认了html 属性href作相对引用的逻辑后，修改为：
 因为href='/path'
-会直接访问当前主域名＋path
+会直接访问当前主域名＋path（取决于浏览器）
 
     <url><%-  config.root + encodeURIComponent( post.path) %></url>
 
@@ -148,6 +148,7 @@ search.ejs
 
 
 其它md的相对路径也按照该逻辑处理。减少绝对路径使用，因为有多个发布地点。
+为了减少所有的绝对饮用，url设置为url:  check_hexo_config_url 观察是否有问题。
 
 
 
