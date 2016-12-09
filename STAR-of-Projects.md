@@ -129,7 +129,7 @@ Google恢复正常投放，顺利保证The Media Trust服务。
     - 测试（合理预计过滤比例）
     - 数据报告（验证有效性）
     - 使用方案
-- 基于行业内brandsafety的adserving调研并产出[PPT](https://noragithub.github.io/PRD_deployment/%E5%93%81%E7%89%8C%E5%AE%A2%E6%88%B7%E5%85%B3%E5%BF%83%E7%9A%84brandsafety%E5%92%8C%E5%8F%8D%E4%BD%9C%E5%BC%8A/index.html)
+- 基于行业内brandsafety的adserving调研并产出[PPT](/PRD_deployment/%E5%93%81%E7%89%8C%E5%AE%A2%E6%88%B7%E5%85%B3%E5%BF%83%E7%9A%84brandsafety%E5%92%8C%E5%8F%8D%E4%BD%9C%E5%BC%8A/index.html)
 
 ### Result
 顺利对接brandsafety服务，服务高通广告主并形成文档、ppt，完成分享
@@ -226,7 +226,7 @@ SEM做广告投放
 - 日均消费提高400%（700-->3000)
 - 点击率提升100%(0.3%-->0.7%)
 - 展示量提升100%
-![SEM](https://noragithub.github.io/PRD_deployment/SEM/SEM.png)
+![SEM](/PRD_deployment/SEM/SEM.png)
 
 ##  有赞商城DSP推广
 ### Situation
@@ -244,7 +244,7 @@ SEM做广告投放
     - 整合第三方DMP数据到DSP进行目标人群重定向
 - 获取激活数据用于优化
     - 对接第三方监测平台，通过S2S scheme获取激活数据
-    ![S2S scheme](https://noragithub.github.io/PRD_deployment/S2S_scheme/S2S_scheme.jpg)
+    ![S2S scheme](/PRD_deployment/S2S_scheme/S2S_scheme.jpg)
     - 在PC端缺乏数据回传机制后，改方向投放
 - 使用项目管理平台（tower.im）协调优化师与开发资源
 
@@ -309,7 +309,7 @@ DSP发展到一个阶段，意识到媒体是广告市场的竞争力所在，�
 - 了解需求细节
 
 ## 移动司南
-[PRD](https://noragithub.github.io/PRD_deployment/移动司南/index.html)
+[PRD](/PRD_deployment/移动司南/index.html)
 ### Situation/Result
 1. 面向对象是CXO level的管理层，数据需求主要是对经营profile的了解。
 2. 当时部门要求pitch老板资源的，因此，对高保真要求高于详细文档要求。当时目标是成为独立事业部，开发和设计资源都很少，能够用口头沟通代替部分文字表达。

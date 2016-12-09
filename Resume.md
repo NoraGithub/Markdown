@@ -97,7 +97,7 @@ Python & R 实现商业分析
 
 [**微博**](http://weibo.com/1872970792)| [**简书**](http://www.jianshu.com/users/06ff1db1651f) |[**知乎**](https://www.zhihu.com/people/Nora_Chan)|[**Github**](https://github.com/NoraGithub)
 
-[Jupyter Notebook](https://busihacker.com:9999)
-[Hexo + Git Blog](http://noragithub.github.io/)
+[Jupyter Notebook](https://jupyter.busihacker.com:9999)
+[Hexo + Git Blog](http://www.busihacker.com)
 一万字讲清楚如何翻墙
 [文字识别初探](http://www.jianshu.com/p/e96a8f303d69)

@@ -143,6 +143,9 @@ search.ejs
 
     <url><%-  config.root + encodeURIComponent( post.path) %></url>
 
+因为使用相对路径404页面也更新为：
+ <script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8" homePageUrl="/ " homePageName="回到我的主页">
+
 
 其它md的相对路径也按照该逻辑处理。减少绝对路径使用，因为有多个发布地点。
 

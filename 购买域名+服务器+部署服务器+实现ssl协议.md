@@ -66,6 +66,6 @@ A self-signed certificate can be generated with openssl
 # 远程服务
 
 下一步：
-部署到域名进行访问[busihacker.com](https://busihacker.com:9999)
+部署到域名进行访问[busihacker.com](https://jupyter.busihacker.com:9999)
 认证ssl/tls证书
 `https://<your-domain>:9999`
