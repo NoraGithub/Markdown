@@ -2,7 +2,7 @@
 title: Hexo Blog Setup以及常见配置
 date: 2016-11-24 09:08:34
 tags:
-keywords: "hexo, 定制化, 结构"
+keywords: "hexo, 定制化, 结构, 架构, 源码 "
 render_drafts: true
 layout: draft
 ---
@@ -21,7 +21,7 @@ theme本身很优秀，但我们还是有一些个性化的需求，需要了解
 - 修改搜索的UI（未完成）
 - ...
 
-大部分信息网络页都有，利用这篇文章简单总结，并探索Hexo & Next theme的架构。
+大部分信息网络页都有，利用这篇文章简单总结，并在最后探索Hexo & Next theme的架构。
 
 # 简介
 
@@ -35,69 +35,22 @@ Hexo级别的[配置](https://hexo.io/zh-cn/docs/configuration.html) 关于站�
 theme级别的[配置](http://theme-next.iissnan.com/)已经对基础设置，如，如何切换theme，更新profie、social link等，做了比较详细的介绍。主要是样式属性。
 
 就像html+css把内容、样式分离开来一样，theme负责Hexo的默认展现（样式）。
-除了配置外信息一般存放于./source目录
+除了配置外的内容信息一般存放于./source目录
 
 # 进阶
 theme级别的[配置](http://theme-next.iissnan.com/)有部分用户路径是没有考虑，如404页面，搜索等。
 
-## Hexo的布局（layout）
 
-### 默认布局（样式）-post
-layout（布局）概念类似一种页面类型，（默认情况下，但是如何新建一个type？新的渲染格式？）Hexo有三种不同的layout，不同layout保存的路径并不一样。
-
-|Layout|Path|
-|:--:|:--|
-|post|./source/_post
-|page|./source
-|draft|./source/_draft
-
-1. 不同layout的唯一区别是保存到不同的路径（to some extent）
-2. layout支持自定义，存放目录和post一样，当scaffold无自定义类型时，调用默认layout
-3. hexo publish 可用于发表草稿（draft-->post，参考1）（仅用于发表草稿，不代表支持转移目录）
-4. hexo new page
-
-
-可以利用layout组织template
-
-|template|Page|Fallback|Path|Fallback Path
-|:--:|:--:|:--:|
-|index|Home page||
-|post|Posts|index|_post|
-|page|Pages|index|source|source/%pagename
-|archive|Archives|index|
-|category|Category archives|archive|
-|tag|Tag archives|archive|
-
-Fallback位于类似于scaffolds，只是定义了变量，
-不同template的渲染文件位于./themes/next/layout/*下，利用swig组成，swig是一个js模版引擎
-
-/source/_其它（page？）
-[reference-写作](https://hexo.io/zh-cn/docs/writing.html)
-
-
-hexo new draft ..
-其中..d的layout是post，并非draft，有点坑啊。。。
-在scaffolds中国年增加变量layout: {{ layout}}解决该问题，然而历史的的md都会被认为是默认的layout：post，需手动添加layout: draft补充
-在post.swig和post-collapse的 <h1>标签增加
-        {# added by Nora, for draft only #}
-        {% if post.layout === "draft" %}
-        <font color=#FF4500 size=1> 撰写中</font>
-        {% endif %}
-用于提醒。
-
-## scaffold自定义模版（样式）
-
-scaffolds/%layout
-scaffolds决定不同layout的变量，在initial一个article时出现的变量，不同的layout变量使用不同的template和不同的path
-template上述内容的展现方式
-切换布局
-
-*如果要显示草稿，页面级别设置是没用的，只能全站级别*
-**希望修改为页面级别，而且修改样式提醒为草稿以及首页显示后提醒草稿样式**
 
 ## 设置404页面
-我们希望404
-## 新建页面
+我们希望404并非纯粹的`Cannot GET <％path> `或者其它一成不变的错误信息。
+![hexo 默认404](http://of2r0f294.bkt.clouddn.com/hexo_default_404)
+我们希望有效地利用这部分流量，甚至做一些有意义的事情。
+就像：
+![404搜索流量](http://of2r0f294.bkt.clouddn.com/404搜索流量.png)
+![404宝贝回家](http://of2r0f294.bkt.clouddn.com/404宝贝回家.png)
+
+### 新建页面
 新建page和新建post是不一样的，新建page利用`hexo new page %pagename`，创建后会有%pagename文件夹，文件夹有index.md，md内容为该页面调用内容。
 
 新建博客利用`hexo new %postname`创建后有%blogname.md为名的post文件，存放于source/_post
@@ -127,12 +80,12 @@ template上述内容的展现方式
 新问题：
 修改generator-search-db
 search.ejs
-
-      <!--modified by Nora
-       <url><%- encodeURIComponent(config.root + post.path) %></url>
-       -->
-       <url><%- config.url + config.root + encodeURIComponent( post.path) %></url>
-
+```
+<!--modified by Nora
+<url><%- encodeURIComponent(config.root + post.path) %></url>
+-->
+<url><%- config.url + config.root + encodeURIComponent( post.path) %></url>
+```
 增加绝对路径
 生成search.xml
 
@@ -141,11 +94,14 @@ search.ejs
 因为href='/path'
 会直接访问当前主域名＋path（取决于浏览器）
 
-    <url><%-  config.root + encodeURIComponent( post.path) %></url>
+```
+<url><%-  config.root + encodeURIComponent( post.path) %></url>
+```
 
 因为使用相对路径404页面也更新为：
+```
  <script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8" homePageUrl="/ " homePageName="回到我的主页">
-
+```
 
 其它md的相对路径也按照该逻辑处理。减少绝对路径使用，因为有多个发布地点。
 为了减少所有的绝对饮用，url设置为url:  check_hexo_config_url 观察是否有问题。
@@ -161,6 +117,20 @@ search.ejs
 检查yoursite.com/search.xml可以发现`npm install hexo-generator-searchdb --save`会根据文章简历索引，并编码后访问
 [#reference:]()
 [#reference: HTML URL 编码](http://www.w3school.com.cn/tags/html_ref_urlencode.html)
+
+
+## github做了子项目pages
+coding也需要做
+noragithub/prd_deployment映射到nora_coding/prd_deployment，同时pages业务。
+两个项目都已经忽略了主域名，不做映射回出问题（coding找不到该页面）
+这里利用hook设置
+
+
+
+
+
+## hook需要自由服务器，结合docker的自动化常识，daoke.cluod
+名字是pages blog
 
 # 文章配置
 update time
@@ -195,6 +165,62 @@ seo支持
 updatetime function
 
 # 定制化（进阶）
+## Hexo的布局（layout）
+
+### 默认布局（样式）-post
+layout（布局）概念类似一种页面类型，（默认情况下，但是如何新建一个type？新的渲染格式？）Hexo有三种不同的layout，不同layout保存的路径并不一样。
+
+|Layout|Path|
+|:--:|:--|
+|post|./source/_post
+|page|./source
+|draft|./source/_draft
+
+1. 不同layout的唯一区别是保存到不同的路径（to some extent）
+2. layout支持自定义，存放目录和post一样，当scaffold无自定义类型时，调用默认layout
+3. hexo publish 可用于发表草稿（draft-->post，参考1）（仅用于发表草稿，不代表支持转移目录，是否代表支持修改scaffold里的layout变量？）
+4. hexo new page
+
+
+可以利用layout组织template
+
+|template|Page|Fallback|Path|Fallback Path
+|:--:|:--:|:--:|
+|index|Home page||
+|post|Posts|index|_post|
+|page|Pages|index|source|source/%pagename
+|archive|Archives|index|
+|category|Category archives|archive|
+|tag|Tag archives|archive|
+
+Fallback位于类似于scaffolds，只是定义了变量，
+不同template的渲染文件位于 `./themes/next/layout/\*` 下，利用swig组成，[swig是一个js模版引擎](http://www.cnblogs.com/elementstorm/p/3142644.html)
+[http://imweb.io/topic/565b2e23bb6a753a136242b5](http://imweb.io/topic/565b2e23bb6a753a136242b5)
+
+/source/_其它（page？）
+[reference-写作](https://hexo.io/zh-cn/docs/writing.html)
+
+
+hexo new draft ..
+其中..d的layout是post，并非draft，有点坑啊。。。
+在scaffolds中国年增加变量layout: {{ layout}}解决该问题，然而历史的的md都会被认为是默认的layout：post，需手动添加layout: draft补充
+在post.swig和post-collapse的 <h1>标签增加
+        {# added by Nora, for draft only #}
+        {% if post.layout === "draft" %}
+        <font color=#FF4500 size=1> 撰写中</font>
+        {% endif %}
+用于提醒。
+
+## scaffold自定义模版（样式）
+
+scaffolds/%layout
+scaffolds决定不同layout的变量，在initial一个article时出现的变量，不同的layout变量使用不同的template和不同的path
+template上述内容的展现方式
+切换布局
+
+*如果要显示草稿，页面级别设置是没用的，只能全站级别*
+**希望修改为页面级别，而且修改样式提醒为草稿以及首页显示后提醒草稿样式**
+
 
 [结构](https://hexo.io/zh-cn/docs/templates.html)
 
@@ -546,6 +572,7 @@ updatetime function
 
 
 ```
+
 更新语言包的映射表。
 更新_marco/post.swig，用于增加updated time元素，在post增加updated变量
 [swig使用指南](http://www.cnblogs.com/elementstorm/p/3142644.html) 
@@ -665,3 +692,9 @@ npm install phantomjs  --save
 
 
 流程图支持的markdown语法
+
+
+
+###fancy box 效果问题&增加post级别fancy设置
+
+设置点击不跳转
