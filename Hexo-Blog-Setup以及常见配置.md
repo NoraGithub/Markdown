@@ -7,6 +7,14 @@ render_drafts: true
 layout: draft
 ---
 
+<style type="text/css">
+img {
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+</style>
+
 使用Hexo进行了Blog的Setup后，我们希望选择一个心仪的theme（即不同页面类型保持一致的风格），配置需要的功能选项/属性，甚至进行一些个性化的定制。
 <!--more-->
 如何预览和使用心仪的theme，Google后有足够的信息，这里就不详细介绍了。Hexo默认theme是landscape。网络上也有不少对默认主题的自定义配置方案，例如，[hexo的私人订制](http://blog.sunnyxx.com/2014/03/07/hexo_customize/)
@@ -698,3 +706,4 @@ npm install phantomjs  --save
 ###fancy box 效果问题&增加post级别fancy设置
 
 设置点击不跳转
+设置阴影效果
