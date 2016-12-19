@@ -43,42 +43,77 @@ Hexo级别的[配置](https://hexo.io/zh-cn/docs/configuration.html) 关于站�
 theme级别的[配置](http://theme-next.iissnan.com/)已经对基础设置，如，如何切换theme，更新profie、social link等，做了比较详细的介绍。主要是样式属性。
 
 就像html+css把内容、样式分离开来一样，theme负责Hexo的默认展现（样式）。
-除了配置外的内容信息一般存放于./source目录
+除了配置外的内容信息一般存放于`./source`目录
 
 # 进阶
+
 theme级别的[配置](http://theme-next.iissnan.com/)有部分用户路径是没有考虑，如404页面，搜索等。
 
-
-
 ## 设置404页面
+
 我们希望404并非纯粹的`Cannot GET <％path> `或者其它一成不变的错误信息。
 ![hexo 默认404](http://of2r0f294.bkt.clouddn.com/hexo_default_404)
+
 我们希望有效地利用这部分流量，甚至做一些有意义的事情。
-就像：
+例如：
+构建搜索的闭环；
 ![404搜索流量](http://of2r0f294.bkt.clouddn.com/404搜索流量.png)
+做一些公益；
 ![404宝贝回家](http://of2r0f294.bkt.clouddn.com/404宝贝回家.png)
 
 ### 新建页面
-新建page和新建post是不一样的，新建page利用`hexo new page %pagename`，创建后会有%pagename文件夹，文件夹有index.md，md内容为该页面调用内容。
+执行`$ hexo new page 404`
+进入`source/404`编辑index.md
 
-新建博客利用`hexo new %postname`创建后有%blogname.md为名的post文件，存放于source/_post
+**宝贝回家－腾讯公益**
 
+```
+---
+title: 404
+permalink: /404
+comments: false
+---
+<!DOCTYPE HTML>
+<html>
+    <head>
+      <meta http-equiv="content-type" content="text/html;charset=utf-8;"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <meta name="robots" content="all" />
+      <meta name="robots" content="index,follow"/>
+    </head>
+    <body>
+        <script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8" homePageUrl="/ " homePageName="回到我的主页">
+        </script>
+    </body>
+</html>
+```
 
+PS：
+1. 新建page和新建post是不一样的，新建page利用`hexo new page %pagename`，创建后会有`%pagename`文件夹，文件夹有`index.md`，md内容为该page调用内容。 新建post利用`hexo new %postname`创建后有`%postname.md`为名的md文件，存放于`source/_post`。page和post属于hexo的两种layout，其它layout差异请看[这儿](#默认布局-post)
+2. 参考[hexo变量](https://hexo.io/zh-cn/docs/variables.html)
 
-/2016/12/06/photoe-test/%2F2016%2F11%2F24%2FHexo-Blog-Setup%E4%BB%A5%E5%8F%8A%E5%B8%B8%E8%A7%81%E9%85%8D%E7%BD%AE%2F 404
+### 其他
 
-这种页面的404还是显示不正常
+除非DNS或者其他网络异常，无法请求到custom_domain的情况，否则404页面都会正常显示
+[网络异常导致的不能访问](http://of2r0f294.bkt.clouddn.com/connection%20reset.png)
+
 ## 设置about
+
 同理
-# 设置rss
-感觉rss是一个模版粒度的设置，换了模版就有必要重新设置（如果有需要）
-[显示feed链接](https://github.com/iissnan/hexo-theme-next/wiki/%E6%98%BE%E7%A4%BA-feed-%E9%93%BE%E6%8E%A5)
-# 设置分享插件（duoshuo）
-# 设置站内搜索
+
+## 设置RSS
+
+RSS是一个模版粒度的设置，换了模版就有必要重新设置（如果有需要）
+[#reference-显示feed链接](https://github.com/iissnan/hexo-theme-next/wiki/%E6%98%BE%E7%A4%BA-feed-%E9%93%BE%E6%8E%A5)
+
+## 设置分享插件（duoshuo）
+
+## 设置站内搜索
+
 利用Next主题的local search插件的时候，会出现一个特别的情况：
-当你在yoursite.com/page1做search的时候，点击搜索结果会出现异常：
-会navigate到yoursite.com/page1/%search_result_relativePath
-出现这个问题的主要原因是站点配置/path_your_blog/source/_cofig.yml的url值配置问题，改为absolutePath可以杜绝这个情况。
+当你在`yoursite.com/<%page>`做search的时候，点击搜索结果会出现异常：
+会navigate到`yoursite.com/<%page1>/<%search_result_relativePath>`
+出现这个问题的主要原因是站点配置`/path_your_blog/source/_cofig.`yml的url值配置问题，改为absolutePath可以杜绝这个情况。
 即，
 `yoursite.com`
 `http://yoursite.com/`
@@ -141,7 +176,12 @@ noragithub/prd_deployment映射到nora_coding/prd_deployment，同时pages业务
 名字是pages blog
 
 # 文章配置
-update time
+
+参考[hexo变量](https://hexo.io/zh-cn/docs/variables.html)
+增加updated: {{ updated }}
+
+## 显示updated
+
 # SEO优化设置
 ## keywords
 页面级别配置
@@ -162,20 +202,25 @@ http://ww2.sinaimg.cn/mw690/6fa34428jw8e6sgfwn3suj20c80afmxk.jpg
 #### 定期更新问题&hook问题&父子域名、（发布到coding.me／noragithub.io）
 
 # 可能有的问题
-https协议的支持
-seo支持
-自定义监测支持
+1. https协议的支持
+2. seo支持
+3. 自定义监测支持
 [提示有编码错误](https://github.com/PaicHyperionDev/hexo-generator-search/issues/8)
-## 不支持所有页面进行local search
-当对配置中 search- field从`post`修改为`all`，会提醒post is not defined 
+
+4. 不支持所有页面进行local search（当对配置中 search- field从`post`修改为`all`，会提醒post is not defined ）
 
 
 updatetime function
 
+[动动手指，NexT主题与Hexo更搭哦（基础篇）](http://www.arao.me/2015/hexo-next-theme-optimize-base/)
+[hexo + gitpages 搭建博客](http://vonalex.github.io/2016/04/03/hexo-gitpages%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2/)
+[Hexo 主题制作指南](https://chensd.com/2016-06/hexo-theme-guide.html)
+
 # 定制化（进阶）
+
 ## Hexo的布局（layout）
 
-### 默认布局（样式）-post
+### 默认布局-post
 layout（布局）概念类似一种页面类型，（默认情况下，但是如何新建一个type？新的渲染格式？）Hexo有三种不同的layout，不同layout保存的路径并不一样。
 
 |Layout|Path|
@@ -219,7 +264,7 @@ hexo new draft ..
         {% endif %}
 用于提醒。
 
-## scaffold自定义模版（样式）
+## scaffold自定义模版
 
 scaffolds/%layout
 scaffolds决定不同layout的变量，在initial一个article时出现的变量，不同的layout变量使用不同的template和不同的path
@@ -229,7 +274,7 @@ template上述内容的展现方式
 *如果要显示草稿，页面级别设置是没用的，只能全站级别*
 **希望修改为页面级别，而且修改样式提醒为草稿以及首页显示后提醒草稿样式**
 
-
+[建站](https://hexo.io/zh-cn/docs/setup.html)
 [结构](https://hexo.io/zh-cn/docs/templates.html)
 
 为了进行个性化定制，先定义一些主要的数据类型：
@@ -707,3 +752,14 @@ npm install phantomjs  --save
 
 设置点击不跳转
 设置阴影效果
+```
+<style type="text/css">
+img {
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+}
+</style>
+```
+[css3的box-shadow属性实现图层阴影效果](http://www.poluoluo.com/jzxy/201005/84148.html)
+[CSS Box Shadow](https://css-tricks.com/snippets/css/css-box-shadow/)

@@ -2,6 +2,10 @@
 title: 部署Jupyter/IPython Notebook Memo
 date: 2016-09-24 20:55:44
 tags:
+ - Jupyter Notebook
+ - Ipython Notebook
+ - Jupyter
+ - Ipython
 ---
 
 # 需求：
@@ -95,7 +99,14 @@ Canopy下载[地址](https://store.enthought.com/downloads/#default)，选择合
 
 > \$  scp -P &lt;%服务端SSH端口> path/to/save/local/canopy/&lt;canopy-to-insall>.sh &lt;%服务端user-name>@&lt;%服务器IP>:path/to/save/server/canopy 
 
+'''
+PS：scp命令，如果服务端地址有空格，如`~/server_doc_to_save/python\ for\ data/ml-1m`这个地址下的`python for data`文件夹，需要加单引号（起码我是的），如`'~/server_doc_to_save/python\ for\ data/ml-1m'`否则会引起歧义问题`scp: ambiguous target`。这个歧义问题（可能）是服务器以为你要上传文件到多个文件夹，其中，多个文件夹以空格` `区隔。
+'''
+
 [#reference-利用ssh传输文件](http://www.cnblogs.com/jiangyao/archive/2011/01/26/1945570.html)
+[#reference-scp copy to external hard drive ambiguous target](http://superuser.com/questions/1022976/scp-copy-to-external-hard-drive-ambiguous-target)
+[#reference-scp: Ambiguous Target Error Solved](http://mikestechblog.com/ubuntu-antenna/scp-ambiguous-target-error-solved/)
+
 ### 安装Canopy
 **建议安装前先执行[可能遇到的问题](#可能遇到的问题)脚本,以防万一。**
 

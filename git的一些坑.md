@@ -50,3 +50,20 @@ push错误后，
 [push后撤销](https://www.google.com.hk/search?q=push%E5%90%8E%E6%92%A4%E9%94%80&ie=utf-8&oe=utf-8&gws_rd=cr,ssl)
 
 ## 
+
+[Why are my commits linked to the wrong user?](https://help.github.com/articles/why-are-my-commits-linked-to-the-wrong-user/)
+
+
+##常规步骤
+[起步 - 初次运行 Git 前的配置](https://git-scm.com/book/zh/v1/%E8%B5%B7%E6%AD%A5-%E5%88%9D%E6%AC%A1%E8%BF%90%E8%A1%8C-Git-%E5%89%8D%E7%9A%84%E9%85%8D%E7%BD%AE)
+[Set Up Git](https://help.github.com/articles/set-up-git/)
+[Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
+[MERGE STRATEGIES](https://git-scm.com/docs/merge-strategies)
+准备合并dev分支，请注意--no-ff参数，表示禁用Fast forward：
+'''
+$ git merge --no-ff -m "merge with no-ff" dev
+Merge made by the 'recursive' strategy.
+ readme.txt |    1 +
+ 1 file changed, 1 insertion(+)
+'''
+[分支管理策略](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013758410364457b9e3d821f4244beb0fd69c61a185ae0000)
