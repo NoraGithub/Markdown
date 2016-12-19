@@ -348,6 +348,10 @@ SSH连接上服务器，会传递部分变量，由于服务端和客户端变�
 
 [#reference-Ubuntu服务端GUI配置](#.)
 
+当在Jupyter Notebook中使用图表功能时，例如pandas的plot，如果出现`Invalid DISPLAY variable`，很可能是X server没有启动成功。
+
+[#reference-Invalid DISPLAY variable](https://github.com/matplotlib/matplotlib/issues/3466/)
+[#reference-What's wrong with Pandas plot?](http://stackoverflow.com/questions/18881540/whats-wrong-with-pandas-plot)
 ---
 # End
 
