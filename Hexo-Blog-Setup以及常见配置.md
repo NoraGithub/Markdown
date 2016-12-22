@@ -264,6 +264,8 @@ hexo new draft ..
         {% endif %}
 用于提醒。
 
+通过`hexo new darft "test_draft_publish"`然后`hexo publish "test_draft_publish"`，知识修改了文件的名称，从`test-draft-publish.md`修改为`test-draft-publish-1.md`，layout并未修改为post（期望是layout变量修改为post，并把md文件转移到_post文件夹），这个问题的主要原因是scaffold/draft.md增加了layout变量，需要想办法修改下。
+
 ## scaffold自定义模版
 
 scaffolds/%layout
